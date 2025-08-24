@@ -28,3 +28,28 @@ stories:
   - action: utter_did_that_help
   - intent: deny
   - action: utter_goodbye
+
+- story: hỏi phí ship
+  steps:
+    - intent: greet
+    - action: utter_greet
+    - intent: ask_shipping
+    - action: utter_ask_shipping
+
+- story: hỏi thanh toán
+  steps:
+    - intent: greet
+    - action: utter_greet
+    - intent: ask_payment
+    - action: utter_ask_payment
+
+- story: kết thúc hội thoại
+  steps:
+    - intent: goodbye
+    - action: utter_goodbye
+
+- story: hướng dẫn cách mua hàng
+  steps:
+    - intent: ask_how_to_buy
+    - action: utter_ask_how_to_buy
+

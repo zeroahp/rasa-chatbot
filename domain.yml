@@ -8,10 +8,19 @@ intents:
   - mood_great
   - mood_unhappy
   - bot_challenge
+  - ask_all_products
+  - ask_giveaway
+  - ask_how_to_buy
+  - ask_payment
+  - ask_shipping
+  - san_pham_ban_chay
 
 responses:
   utter_greet:
-  - text: "Hey! How are you?"
+  - text: "Chào bạn, shop có thể giúp gì ạ?"
+
+  utter_san_pham_ban_chay:
+    - text: "Đây là những sản phẩm bán chạy nhất hiện nay:"
 
   utter_cheer_up:
   - text: "Here is something to cheer you up:"
@@ -24,11 +33,34 @@ responses:
   - text: "Great, carry on!"
 
   utter_goodbye:
-  - text: "Bye"
+  - text: "Cảm ơn bạn đã ghé shop, hẹn gặp lại"
 
   utter_iamabot:
   - text: "I am a bot, powered by Rasa."
 
+  utter_ask_shipping:
+  - text: "Phí ship là 30k, thời gian giao từ 2-4 ngày."
+
+  utter_ask_giveaway:
+  - text: "Hiện hệ thống có tặng đồ dùng từ các cửa hàng, xem chi tiết [Tại đây](http://localhost:3000/donates)"
+
+
+  utter_ask_payment:
+  - text: "Shop hỗ trợ thanh toán COD, và chuyển khoản bằng VNPay nhé bạn."
+
+  utter_ask_how_to_buy:
+  - text: |
+      Để đặt mua sản phẩm, bạn làm theo các bước sau:
+      1. Vào trang chủ và dùng bộ lọc để tìm sản phẩm cần mua.  
+      2. Chọn sản phẩm để xem chi tiết.  
+      3. Nếu hài lòng, chọn loại và số lượng mong muốn.  
+      4. Nhấn **"Thêm vào giỏ hàng"**.  
+      5. Vào giỏ hàng để xác nhận và tiến hành thanh toán.
+
 session_config:
   session_expiration_time: 60
   carry_over_slots_to_new_session: true
+
+actions:
+  - action_get_all_products
+  - action_san_pham_ban_chay

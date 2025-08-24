@@ -7,28 +7,16 @@ nlu:
     - hello
     - hi
     - hello there
-    - good morning
-    - good evening
-    - moin
-    - hey there
-    - let's go
-    - hey dude
-    - goodmorning
-    - goodevening
-    - good afternoon
+    - xin chào
+    - chào shop
+    - alo shop
+    - shop ơi
 
 - intent: goodbye
   examples: |
-    - cu
-    - good by
-    - cee you later
-    - good night
-    - bye
     - goodbye
-    - have a nice day
-    - see you around
-    - bye bye
-    - see you later
+    - tạm biệt shop
+    
 
 - intent: affirm
   examples: |
@@ -38,16 +26,16 @@ nlu:
     - of course
     - that sounds good
     - correct
+    - ok
 
 - intent: deny
   examples: |
     - no
     - n
     - never
-    - I don't think so
-    - don't like that
-    - no way
-    - not really
+    - không
+    - hong phải
+    
 
 - intent: mood_great
   examples: |
@@ -89,3 +77,45 @@ nlu:
     - are you a human?
     - am I talking to a bot?
     - am I talking to a human?
+
+- intent: ask_all_products
+  examples: |
+    - cho tôi xin danh sách sản phẩm
+    - liệt kê tất cả sản phẩm đi
+    - bạn có những sản phẩm nào
+    - xin tên tất cả sản phẩm
+
+- intent: ask_shipping
+  examples: |
+    - phí ship bao nhiêu?
+    - giao hàng mất mấy ngày?
+    - có giao hàng nhanh không?
+    - ship về Hà Nội mất bao lâu?
+
+- intent: ask_payment
+  examples: |
+    - có những hình thức thanh toán nào?
+    - tôi có thể trả tiền khi nhận hàng không?
+    - có thanh toán qua vnpay không?
+
+- intent: ask_giveaway
+  examples: |
+    - sản phẩm tặng ở đâu ?
+    - sản phẩm tặng là gì ?
+    - cách nhận sản phẩm tặng thế nào?
+
+- intent: ask_how_to_buy
+  examples: |
+    - làm sao để đặt mua sản phẩm?
+    - hướng dẫn cách mua hàng
+    - tôi muốn biết cách đặt hàng
+    - mua sản phẩm trên shop thế nào?
+    - cách thêm vào giỏ hàng?
+
+- intent: san_pham_ban_chay
+  examples: |
+    - Sản phẩm nào bán chạy?
+    - Cho tôi xem top sản phẩm bán chạy
+    - Cửa hàng có sản phẩm nào hot không?
+    - Danh sách sản phẩm bán chạy
+

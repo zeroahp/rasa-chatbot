@@ -1,0 +1,15 @@
+{
+  "0": "affirm",
+  "1": "ask_all_products",
+  "2": "ask_giveaway",
+  "3": "ask_how_to_buy",
+  "4": "ask_payment",
+  "5": "ask_shipping",
+  "6": "bot_challenge",
+  "7": "deny",
+  "8": "goodbye",
+  "9": "greet",
+  "10": "mood_great",
+  "11": "mood_unhappy",
+  "12": "san_pham_ban_chay"
+}

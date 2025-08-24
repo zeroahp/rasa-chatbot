@@ -11,3 +11,29 @@ rules:
   steps:
   - intent: bot_challenge
   - action: utter_iamabot
+
+- rule: Trả lời khi hỏi sản phẩm
+  steps:
+    - intent: ask_all_products
+    - action: action_get_all_products
+
+- rule: hỏi về quà tặng
+  steps:
+    - intent: ask_giveaway
+    - action: utter_ask_giveaway
+
+- rule: hỏi về thanh toán
+  steps:
+    - intent: ask_payment
+    - action: utter_ask_payment
+
+- rule: hỏi về phí ship
+  steps:
+    - intent: ask_shipping
+    - action: utter_ask_shipping
+
+- rule: Trả lời sản phẩm bán chạy
+  steps:
+  - intent: san_pham_ban_chay
+  - action: action_san_pham_ban_chay
+
